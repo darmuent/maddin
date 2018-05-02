@@ -1,0 +1,3 @@
+- Benutzerverwaltung und Oberfläche teilen in 
+	Studenten, Mitarbeiter und Admins
+- Muss das BP Cupid heißen?

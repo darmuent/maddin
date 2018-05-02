@@ -1,0 +1,13 @@
+Installationsvoraussetzungen: Exakte Version in der requirements.txt vorgeben!
+
+Installationsanleitung (für mich):
+Verzeichnis anlegen, auspacken.
+pip install -r requirements\development.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+Nutzung
+"Das Verwaltungssystem des Blockpraktikums der Allgemeinmedizin (BP Cupid und BP Setup) 
+wurde glücklich mit Hilfe folgender Software entwickelt:" --> "glücklich" streichen
+

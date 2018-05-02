@@ -1,0 +1,1 @@
+set PIPENV_VENV_IN_PROJECT=C:\maddin\venv\

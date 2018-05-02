@@ -1,0 +1,611 @@
+Du erstellst dir eine virtuelle Umgebung (python3 -m venv bp_mgmt_env)
+und entpackst die ZIP-Datei dort rein.
+Aktiviere die VE und dann leg los mit installieren der Requirements
+und dem migrieren. Das sollte jetzt alles funktionieren. Ich hab's bei
+mir mal ausprobiert.
+
+C:\maddin\bp_mgmt_env>pip install -r requirements\development.txt
+Collecting Django==1.8.18 (from -r requirements\base.txt (line 1))
+  Using cached https://files.pythonhosted.org/packages/4b/fc/13e6c9279a5245be456
+da4cc73146c7bc76d26484b1474bf4a29d7cd2e93/Django-1.8.18-py2.py3-none-any.whl
+Collecting celery<5.0 (from -r requirements\base.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/22/9b/88ef5cc7edf5d43215f
+383ae0a2b1cdeb33f5f07886386c7e4691b2eba0c/celery-4.1.0-py2.py3-none-any.whl
+Collecting django-celery-results==1.0.1 (from -r requirements\base.txt (line 3))
+
+  Using cached https://files.pythonhosted.org/packages/8d/82/4ede39c945811ffea9d
+e29c5d312e1ab84352c3b01a290f9dce81614567d/django_celery_results-1.0.1-py2.py3-no
+ne-any.whl
+Collecting django-activity-stream==0.6.0 (from -r requirements\base.txt (line 4)
+)
+Collecting django-auth-ldap3==0.9.2 (from -r requirements\base.txt (line 5))
+Collecting GitPython==2.1.5 (from -r requirements\base.txt (line 6))
+  Using cached https://files.pythonhosted.org/packages/7e/13/2a556eb97dcf498c915
+e5e04bb82bf74e07bb8b7337ca2be49bfd9fb6313/GitPython-2.1.5-py2.py3-none-any.whl
+Collecting django-ace==1.0.3 (from -r requirements\base.txt (line 7))
+Collecting djangorestframework==3.6.3 (from -r requirements\base.txt (line 8))
+  Using cached https://files.pythonhosted.org/packages/28/1a/6228d127f426b23360f
+1d62fde153da500c35cad1ba115ffc03fbb40ebe9/djangorestframework-3.6.3-py2.py3-none
+-any.whl
+Collecting django-simple-history==1.9.0 (from -r requirements\base.txt (line 9))
+
+  Using cached https://files.pythonhosted.org/packages/0b/2b/244347867ec680ddcd5
+4722604bdce883613ec9c3da965c6707e548f37ae/django_simple_history-1.9.0-py2.py3-no
+ne-any.whl
+Collecting reportlab==3.4.0 (from -r requirements\base.txt (line 10))
+  Using cached https://files.pythonhosted.org/packages/da/47/fd3afea084d4405be9f
+49c1916ac4273709780881bffe714414a93b82431/reportlab-3.4.0-cp36-cp36m-win_amd64.w
+hl
+Collecting XlsxWriter==0.9.8 (from -r requirements\base.txt (line 11))
+  Using cached https://files.pythonhosted.org/packages/d7/f6/06ebb4212fc6d983c54
+82e1cb53778ba1ae9ab973955d93638146f190150/XlsxWriter-0.9.8-py2.py3-none-any.whl
+Collecting python-docx==0.8.6 (from -r requirements\base.txt (line 12))
+Collecting django-watson==1.4.0 (from -r requirements\base.txt (line 13))
+Collecting django-crispy-forms==1.6.1 (from -r requirements\base.txt (line 14))
+  Using cached https://files.pythonhosted.org/packages/51/a1/663ee8884eb04cd5a29
+c125b5615751ba5f83df1865105957ccca310f0b6/django_crispy_forms-1.6.1-py2.py3-none
+-any.whl
+Collecting django-geoposition==0.3.0 (from -r requirements\base.txt (line 15))
+Collecting django-cors-headers (from -r requirements\base.txt (line 16))
+  Using cached https://files.pythonhosted.org/packages/b1/bc/0414cf96a2e4a917b1f
+53b638f34f4999cc9a97fadbd1420054cc11b4ad2/django_cors_headers-2.2.0-py2.py3-none
+-any.whl
+Collecting ipython (from -r requirements\development.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/3a/eb/38a4491ebdbb0d5be6f
+72abc177a7a49f82541bbebbe5fbfe64b041a782b/ipython-6.3.1-py3-none-any.whl
+Collecting pyflakes==0.9.2 (from -r requirements\development.txt (line 3))
+  Using cached https://files.pythonhosted.org/packages/59/70/6fbc74a5554fd6f0230
+f6cc298c9e74847cc727bdbf07c9f9d01ad8c0dc3/pyflakes-0.9.2-py2.py3-none-any.whl
+Collecting django-extensions (from -r requirements\development.txt (line 4))
+  Using cached https://files.pythonhosted.org/packages/d4/b5/f141b351b49db2cb4c8
+55cd8adbdb98cc49f3944a924ddfe51790bb46402/django_extensions-2.0.7-py2.py3-none-a
+ny.whl
+Collecting django-debug-toolbar (from -r requirements\development.txt (line 5))
+  Using cached https://files.pythonhosted.org/packages/b2/ff/eb95539d31b3f3c1280
+3c8f18cefe7f9e6f7281b059a36dbc9ee9b52c558/django_debug_toolbar-1.9.1-py2.py3-non
+e-any.whl
+Collecting Werkzeug==0.10.4 (from -r requirements\development.txt (line 6))
+  Using cached https://files.pythonhosted.org/packages/49/0c/e33c2caec86a7926186
+f7d454f6a901f45f05ad90337c6972d170b9ee806/Werkzeug-0.10.4-py2.py3-none-any.whl
+Collecting virtualenvwrapper==4.6.0 (from -r requirements\development.txt (line
+7))
+  Using cached https://files.pythonhosted.org/packages/e5/75/3fe705eeee79044b8ea
+f7b8760991c67165b0904c038952c51aa69f1bd6e/virtualenvwrapper-4.6.0-py2.py3-none-a
+ny.whl
+Collecting virtualenv==13.1.0 (from -r requirements\development.txt (line 8))
+  Using cached https://files.pythonhosted.org/packages/bc/0a/6de493fa8e9777e40a2
+9f4d0e59c9467aeba3349d3edb6c9338a32b001e2/virtualenv-13.1.0-py2.py3-none-any.whl
+
+Collecting virtualenv-clone==0.2.6 (from -r requirements\development.txt (line 9
+))
+Collecting stevedore==1.6.0 (from -r requirements\development.txt (line 10))
+  Using cached https://files.pythonhosted.org/packages/07/b6/8b40bf141e1e0753cf7
+2c86259ad99721de1508bc4d4538bb890f2a64c36/stevedore-1.6.0-py2.py3-none-any.whl
+Collecting markdown (from -r requirements\development.txt (line 11))
+  Using cached https://files.pythonhosted.org/packages/6d/7d/488b90f470b96531a3f
+5788cf12a93332f543dbab13c423a5e7ce96a0493/Markdown-2.6.11-py2.py3-none-any.whl
+Collecting selenium (from -r requirements\testing.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/5e/1f/6c2204b9ae14eddab61
+5c5e2ee4956c65ed533e0a9986c23eabd801ae849/selenium-3.11.0-py2.py3-none-any.whl
+Collecting pytz>dev (from celery<5.0->-r requirements\base.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/dc/83/15f7833b70d3e067ca9
+1467ca245bae0f6fe56ddc7451aa0dc5606b120f2/pytz-2018.4-py2.py3-none-any.whl
+Collecting billiard<3.6.0,>=3.5.0.2 (from celery<5.0->-r requirements\base.txt (
+line 2))
+  Using cached https://files.pythonhosted.org/packages/82/55/76f4e786141b7174926
+cdffa7a155aeea316b729118fb48ec548f3c6754f/billiard-3.5.0.3-py3-none-any.whl
+Collecting kombu<5.0,>=4.0.2 (from celery<5.0->-r requirements\base.txt (line 2)
+)
+  Using cached https://files.pythonhosted.org/packages/62/a4/5d16954803224a1e451
+713293c2a028614099f5538cf626e1fdd7b438c86/kombu-4.1.0-py2.py3-none-any.whl
+Collecting ldap3>=0.9.7.1 (from django-auth-ldap3==0.9.2->-r requirements\base.t
+xt (line 5))
+  Using cached https://files.pythonhosted.org/packages/f6/d9/a9db559375543af5ff9
+50198a433bbc34bf7e8afbd32ab22231d0959710a/ldap3-2.5-py2.py3-none-any.whl
+Collecting gitdb2>=2.0.0 (from GitPython==2.1.5->-r requirements\base.txt (line
+6))
+  Using cached https://files.pythonhosted.org/packages/e0/95/c772c13b7c5740ec1a0
+924250e6defbf5dfdaee76a50d1c47f9c51f1cabb/gitdb2-2.0.3-py2.py3-none-any.whl
+Collecting pillow>=2.4.0 (from reportlab==3.4.0->-r requirements\base.txt (line
+10))
+  Using cached https://files.pythonhosted.org/packages/a4/86/283719dac6309cf4834
+52abb09759be9b2c0974435ed608dc67949127e13/Pillow-5.1.0-cp36-cp36m-win_amd64.whl
+Requirement already satisfied: pip>=1.4.1 in c:\python365\lib\site-packages (fro
+m reportlab==3.4.0->-r requirements\base.txt (line 10)) (10.0.1)
+Requirement already satisfied: setuptools>=2.2 in c:\python365\lib\site-packages
+ (from reportlab==3.4.0->-r requirements\base.txt (line 10)) (39.0.1)
+Collecting lxml>=2.3.2 (from python-docx==0.8.6->-r requirements\base.txt (line
+12))
+  Using cached https://files.pythonhosted.org/packages/76/dc/96b0cc4139957c7ff3d
+62f70edcdba5f9ad4a9a5c8a125b8239ce2117b51/lxml-4.2.1-cp36-cp36m-win_amd64.whl
+Collecting colorama; sys_platform == "win32" (from ipython->-r requirements\deve
+lopment.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/db/c8/7dcf9dbcb2242951270
+8fe3a547f8b6101c0d02137acbd892505aee57adf/colorama-0.3.9-py2.py3-none-any.whl
+Collecting backcall (from ipython->-r requirements\development.txt (line 2))
+Collecting pygments (from ipython->-r requirements\development.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/02/ee/b6e02dc6529e82b75bb
+06823ff7d005b141037cb1416b10c6f00fc419dca/Pygments-2.2.0-py2.py3-none-any.whl
+Collecting traitlets>=4.2 (from ipython->-r requirements\development.txt (line 2
+))
+  Using cached https://files.pythonhosted.org/packages/93/d6/abcb22de61d78e2fc39
+59c964628a5771e47e7cc60d53e9342e21ed6cc9a/traitlets-4.3.2-py2.py3-none-any.whl
+Collecting pickleshare (from ipython->-r requirements\development.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/9f/17/daa142fc9be6b76f26f
+24eeeb9a138940671490b91cb5587393f297c8317/pickleshare-0.7.4-py2.py3-none-any.whl
+
+Collecting simplegeneric>0.8 (from ipython->-r requirements\development.txt (lin
+e 2))
+Collecting decorator (from ipython->-r requirements\development.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/bc/bb/a24838832ba35baf52f
+32ab1a49b906b5f82fb7c76b2f6a7e35e140bac30/decorator-4.3.0-py2.py3-none-any.whl
+Collecting jedi>=0.10 (from ipython->-r requirements\development.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/e7/42/074192a165622e645ed
+4aeade63e76e56b3496a044569b3c6cae3a918352/jedi-0.12.0-py2.py3-none-any.whl
+Collecting prompt-toolkit<2.0.0,>=1.0.15 (from ipython->-r requirements\developm
+ent.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/04/d1/c6616dd03701e7e2073
+f06d5c3b41b012256e42b72561f16a7bd86dd7b43/prompt_toolkit-1.0.15-py3-none-any.whl
+
+Collecting six>=1.2 (from django-extensions->-r requirements\development.txt (li
+ne 4))
+  Using cached https://files.pythonhosted.org/packages/67/4b/141a581104b1f6397bf
+a78ac9d43d8ad29a7ca43ea90a2d863fe3056e86a/six-1.11.0-py2.py3-none-any.whl
+Collecting sqlparse>=0.2.0 (from django-debug-toolbar->-r requirements\developme
+nt.txt (line 5))
+  Using cached https://files.pythonhosted.org/packages/65/85/20bdd72f4537cf2c4d5
+d005368d502b2f464ede22982e724a82c86268eda/sqlparse-0.2.4-py2.py3-none-any.whl
+Collecting pbr<2.0,>=0.11 (from stevedore==1.6.0->-r requirements\development.tx
+t (line 10))
+  Using cached https://files.pythonhosted.org/packages/b8/a1/7abb01fd93d66fc71e2
+4e5df9ca6d7d9acfb4b715937d2a38fd739f266e6/pbr-1.10.0-py2.py3-none-any.whl
+Collecting argparse (from stevedore==1.6.0->-r requirements\development.txt (lin
+e 10))
+  Using cached https://files.pythonhosted.org/packages/f2/94/3af39d34be01a24a6e6
+5433d19e107099374224905f1e0cc6bbe1fd22a2f/argparse-1.4.0-py2.py3-none-any.whl
+Collecting amqp<3.0,>=2.1.4 (from kombu<5.0,>=4.0.2->celery<5.0->-r requirements
+\base.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/88/4a/8c45a882d8426789635
+16ebd9cf584a4ded51af719234c3b696c2e884c60/amqp-2.2.2-py2.py3-none-any.whl
+Collecting pyasn1>=0.1.8 (from ldap3>=0.9.7.1->django-auth-ldap3==0.9.2->-r requ
+irements\base.txt (line 5))
+  Using cached https://files.pythonhosted.org/packages/ba/fe/02e3e2ee243966b1436
+57fb8bd6bc97595841163b6d8c26820944acaec4d/pyasn1-0.4.2-py2.py3-none-any.whl
+Collecting smmap2>=2.0.0 (from gitdb2>=2.0.0->GitPython==2.1.5->-r requirements\
+base.txt (line 6))
+  Using cached https://files.pythonhosted.org/packages/e3/59/4e22f692e65f5f92712
+52a8e63f04ce4ad561d4e06192478ee48dfac9611/smmap2-2.0.3-py2.py3-none-any.whl
+Collecting ipython-genutils (from traitlets>=4.2->ipython->-r requirements\devel
+opment.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/fa/bc/9bd3b5c2b4774d5f33b
+2d544f1460be9df7df2fe42f352135381c347c69a/ipython_genutils-0.2.0-py2.py3-none-an
+y.whl
+Collecting parso>=0.2.0 (from jedi>=0.10->ipython->-r requirements\development.t
+xt (line 2))
+  Using cached https://files.pythonhosted.org/packages/63/69/0c383765d192006330b
+faae27a2c5d0933fb4760c5aacd933b8b19391693/parso-0.2.0-py2.py3-none-any.whl
+Collecting wcwidth (from prompt-toolkit<2.0.0,>=1.0.15->ipython->-r requirements
+\development.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/7e/9f/526a6947247599b084e
+e5232e4f9190a38f398d7300d866af3ab571a5bfe/wcwidth-0.1.7-py2.py3-none-any.whl
+Collecting vine>=1.1.3 (from amqp<3.0,>=2.1.4->kombu<5.0,>=4.0.2->celery<5.0->-r
+ requirements\base.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/10/50/5b1ebe42843c19f35ed
+b15022ecae339fbec6db5b241a7a13c924dabf2a3/vine-1.1.4-py2.py3-none-any.whl
+Installing collected packages: Django, pytz, billiard, vine, amqp, kombu, celery
+, django-celery-results, django-activity-stream, pyasn1, ldap3, django-auth-ldap
+3, smmap2, gitdb2, GitPython, django-ace, djangorestframework, django-simple-his
+tory, pillow, reportlab, XlsxWriter, lxml, python-docx, django-watson, django-cr
+ispy-forms, django-geoposition, django-cors-headers, colorama, backcall, pygment
+s, six, decorator, ipython-genutils, traitlets, pickleshare, simplegeneric, pars
+o, jedi, wcwidth, prompt-toolkit, ipython, pyflakes, django-extensions, sqlparse
+, django-debug-toolbar, Werkzeug, virtualenv, pbr, argparse, stevedore, virtuale
+nv-clone, virtualenvwrapper, markdown, selenium
+  The script django-admin.exe is installed in 'c:\python365\Scripts' which is no
+t on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warn
+ing, use --no-warn-script-location.
+  The script celery.exe is installed in 'c:\python365\Scripts' which is not on P
+ATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warn
+ing, use --no-warn-script-location.
+  The script pygmentize.exe is installed in 'c:\python365\Scripts' which is not
+on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warn
+ing, use --no-warn-script-location.
+  The scripts iptest.exe, iptest3.exe, ipython.exe and ipython3.exe are installe
+d in 'c:\python365\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warn
+ing, use --no-warn-script-location.
+  The script pyflakes.exe is installed in 'c:\python365\Scripts' which is not on
+ PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warn
+ing, use --no-warn-script-location.
+  The script sqlformat.exe is installed in 'c:\python365\Scripts' which is not o
+n PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warn
+ing, use --no-warn-script-location.
+  The scripts virtualenv-3.4.exe and virtualenv.exe are installed in 'c:\python3
+65\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warn
+ing, use --no-warn-script-location.
+  The script pbr.exe is installed in 'c:\python365\Scripts' which is not on PATH
+.
+  Consider adding this directory to PATH or, if you prefer to suppress this warn
+ing, use --no-warn-script-location.
+  The script virtualenv-clone.exe is installed in 'c:\python365\Scripts' which i
+s not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warn
+ing, use --no-warn-script-location.
+  The script markdown_py.exe is installed in 'c:\python365\Scripts' which is not
+ on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warn
+ing, use --no-warn-script-location.
+Successfully installed Django-1.8.18 GitPython-2.1.5 Werkzeug-0.10.4 XlsxWriter-
+0.9.8 amqp-2.2.2 argparse-1.4.0 backcall-0.1.0 billiard-3.5.0.3 celery-4.1.0 col
+orama-0.3.9 decorator-4.3.0 django-ace-1.0.3 django-activity-stream-0.6.0 django
+-auth-ldap3-0.9.2 django-celery-results-1.0.1 django-cors-headers-2.2.0 django-c
+rispy-forms-1.6.1 django-debug-toolbar-1.9.1 django-extensions-2.0.7 django-geop
+osition-0.3.0 django-simple-history-1.9.0 django-watson-1.4.0 djangorestframewor
+k-3.6.3 gitdb2-2.0.3 ipython-6.3.1 ipython-genutils-0.2.0 jedi-0.12.0 kombu-4.1.
+0 ldap3-2.5 lxml-4.2.1 markdown-2.6.11 parso-0.2.0 pbr-1.10.0 pickleshare-0.7.4
+pillow-5.1.0 prompt-toolkit-1.0.15 pyasn1-0.4.2 pyflakes-0.9.2 pygments-2.2.0 py
+thon-docx-0.8.6 pytz-2018.4 reportlab-3.4.0 selenium-3.11.0 simplegeneric-0.8.1
+six-1.11.0 smmap2-2.0.3 sqlparse-0.2.4 stevedore-1.6.0 traitlets-4.3.2 vine-1.1.
+4 virtualenv-13.1.0 virtualenv-clone-0.2.6 virtualenvwrapper-4.6.0 wcwidth-0.1.7
+
+
+
+
+C:\maddin\bp_mgmt_env>python manage.py showmigrations
+actstream
+ [X] 0001_initial
+admin
+ [X] 0001_initial
+auth
+ [X] 0001_initial
+ [X] 0002_alter_permission_name_max_length
+ [X] 0003_alter_user_email_max_length
+ [X] 0004_alter_user_username_opts
+ [X] 0005_alter_user_last_login_null
+ [X] 0006_require_contenttypes_0002
+bp_cupid
+ [X] 0002_landkreis
+ [X] 0004_verwaltungszeitraum
+ [X] 0006_student
+ [X] 0008_block
+ [X] 0010_zeitraum
+ [X] 0012_praxis
+ [X] 0014_gewicht
+ [X] 0015_platz
+ [X] 0017_block_unique
+ [X] 0018_praxis_related_names
+ [X] 0019_platzbegrenzung
+ [X] 0020_mitarbeiter
+ [X] 0022_platz_onetoone_student
+ [X] 0023_praxis_weitere_attribute
+ [X] 0025_platz_change_ordering
+ [X] 0028_student_user
+ [X] 0029_student_hat_fragebogen_ausgefuellt
+ [X] 0031_student_neue_fragebogendaten
+ [X] 0032_student_user_blank
+ [X] 0034_site_settings
+ [X] 0035_vorlage
+ [X] 0036_aendere_hilfetext_von_vorlage
+ [X] 0037_historicalplatz
+ [X] 0038_zusatzinfopraxis
+ [X] 0039_pj_platz
+ [X] 0040_remove_pj_platz
+ [X] 0042_evaluation
+ [X] 0043_student_telefonnummer
+ [X] 0044_zeitraum_alter_ueberlappende
+ [X] 0045_vergroessert_zeichenbegrenzung_der_landkreise
+ [X] 0046_abrechnungsdetail
+ [X] 0047_kosmetische_aenderungen
+ [X] 0048_verwaltungszeitraum_plaetze_fuer_studenten_einsehbar
+ [X] 0049_evaluation_note_praktikum_nicht_mehr_zwingend
+ [X] 0050_block_kapazitaet
+ [X] 0051_historicalstudent
+ [X] 0052_landkreise_aendert_beschreibung_von_plzs
+ [X] 0053_entfernt_ueberfluessigen_whitespace_bei_help_text
+ [X] 0054_verwaltungszeitraum_anzeige_fuer_fragebogen
+ [X] 0055_student_interne_notizen
+ [X] 0056_adds_historicalfields
+ [X] 0057_student_ist_haertefall
+ [X] 0058_student_noten
+ [X] 0059_praxis_bundeswehr
+ [X] 0060_student_bundeswehr
+ [X] 0061_student_hat_seminar_besucht
+ [X] 0062_praxen_urkunden
+ [X] 0063_praxis_beginn_der_lehrtaetigkeit
+ [X] 0064_verwaltungszeitraum_zu_bpverwaltungszeitraum
+ [X] 0065_kleine_aenderungen
+ [X] 0066_block_zu_bpblock
+ [X] 0067_bpblock_fk_to_bpverwaltungszeitraum_rename_related_name
+ [X] 0068_zeitraum_fk_to_bpblock_add_verbose_name
+ [X] 0069_zeitraum_zu_bpzeitraum
+ [X] 0070_bpzeitraum_ueberlappende_berechnen
+ [X] 0071_platz_zu_bpplatz
+ [X] 0072_platzbegrenzung_zu_bpplatzbegrenzung
+ [X] 0073_evaluation_und_kleine_sachen_zu_bpplatz
+ [X] 0074_delete_historicalplatz
+ [X] 0075_create_historicalbpplatz
+ [X] 0076_alter_fields_on_bpplatz_and_bpzeitraum
+ [X] 0077_pjverwaltungszeitraum
+ [X] 0078_pjblock
+ [X] 0079_pjzeitraum
+ [X] 0080_pjplatz
+ [X] 0081_pj_zeitraeume_bei_praxis_und_pjzeitraum
+ [X] 0082_pjplatz_change_id_default
+ [X] 0083_praxis_position
+ [X] 0084_praxis_ist_vip
+ [X] 0085_abrechnungszeitraum
+ [X] 0086_erzeuge_standardabrechnungszeitraeume
+ [X] 0087_add_fk_abrechnungszeitraum_to_abrechnungsdetail
+ [X] 0088_setze_abrechnungszeitraeume
+ [X] 0089_loesche_bpverwaltungszeitraum_aus_abrechnungsdetail
+ [X] 0090_praxis_sortierschluessel
+contenttypes
+ [X] 0001_initial
+ [X] 0002_remove_content_type_name
+django_celery_results
+ [X] 0001_initial
+flatpages
+ [X] 0001_initial
+sessions
+ [X] 0001_initial
+sites
+ [X] 0001_initial
+watson
+ [X] 0001_initial
+
+C:\maddin\bp_mgmt_env>python manage.py makemigrations
+Migrations for 'actstream':
+  0002_remove_action_data.py:
+    - Remove field data from action
+
+no migrations to apply; runserver:
+Keine Authentifizierung via LDAP möglich
+Anmeldung als Admin möglich, erste Schritte zur
+Konfiguration wie BP-Verwaltungszeitraum usw.
+
+
+Dabei verschiedene Fehler:
+C:\maddin\bp_mgmt_env>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 23, 2018 - 20:59:54
+Django version 1.8.18, using settings 'bp_mgmt.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[23/Apr/2018 21:00:19] "GET / HTTP/1.1" 302 0
+[23/Apr/2018 21:00:19] "GET /login?next=/ HTTP/1.1" 301 0
+[23/Apr/2018 21:00:20] "GET /login/?next=/ HTTP/1.1" 200 12787
+[23/Apr/2018 21:00:20] "GET /static/bp_cupid/css/custom.css HTTP/1.1" 200 105
+[23/Apr/2018 21:00:20] "GET /static/bp_cupid/css/bootstrap.min.css HTTP/1.1" 200
+ 117305
+[23/Apr/2018 21:00:20] "GET /static/bp_cupid/css/login.css HTTP/1.1" 200 699
+[23/Apr/2018 21:00:20] "GET /static/bp_cupid/css/font-awesome.min.css HTTP/1.1"
+200 23739
+[23/Apr/2018 21:00:20] "GET /static/bp_cupid/js/bootstrap.min.js HTTP/1.1" 200 3
+5951
+[23/Apr/2018 21:00:20] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 29
+
+[23/Apr/2018 21:00:20] "GET /static/bp_cupid/js/jquery-1.11.3.min.js HTTP/1.1" 2
+00 95957
+[23/Apr/2018 21:00:20] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200
+20322
+[23/Apr/2018 21:00:20] "GET /static/debug_toolbar/js/jquery_post.js HTTP/1.1" 20
+0 118
+[23/Apr/2018 21:00:20] "GET /static/debug_toolbar/js/jquery_pre.js HTTP/1.1" 200
+ 136
+[23/Apr/2018 21:00:20] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 12
+484
+[23/Apr/2018 21:00:20] "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1"
+200 404
+Not Found: /favicon.ico
+[23/Apr/2018 21:00:21] "GET /favicon.ico HTTP/1.1" 404 33019
+[23/Apr/2018 21:00:37] "POST /login/ HTTP/1.1" 200 13012
+[23/Apr/2018 21:00:53] "POST /login/ HTTP/1.1" 200 13012
+Attempting to authenticate to LDAP by binding as uid=helmut,
+LDAP connection error: ('unable to open socket', [(datetime.datetime(2018, 4, 23
+, 21, 1, 5, 999050), <class 'ldap3.core.exceptions.LDAPSocketOpenError'>, LDAPSo
+cketOpenError('socket connection error while opening: [WinError 10061] Es konnte
+ keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweig
+erte',), ('fe80::c4ab:4b92:845a:38aa%11', 389, 0, 11)), (datetime.datetime(2018,
+ 4, 23, 21, 1, 7, 13052), <class 'ldap3.core.exceptions.LDAPSocketOpenError'>, L
+DAPSocketOpenError('socket connection error while opening: [WinError 10061] Es k
+onnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung ve
+rweigerte',), ('192.168.1.101', 389))])
+[23/Apr/2018 21:01:07] "POST /login/ HTTP/1.1" 302 0
+[23/Apr/2018 21:01:07] "GET / HTTP/1.1" 302 0
+[23/Apr/2018 21:01:08] "GET /installation/ HTTP/1.1" 200 18469
+[23/Apr/2018 21:01:08] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 81
+92
+Traceback (most recent call last):
+  File "C:\Python365\lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Python365\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+  File "C:\Python365\lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "C:\Python365\lib\socketserver.py", line 775, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] Eine bestehende Verbindung wurde softwa
+regesteuert
+durch den Hostcomputer abgebrochen
+[23/Apr/2018 21:01:08] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 500 59
+
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 49657)
+Traceback (most recent call last):
+  File "C:\Python365\lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Python365\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+  File "C:\Python365\lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "C:\Python365\lib\socketserver.py", line 775, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] Eine bestehende Verbindung wurde softwa
+regesteuert
+durch den Hostcomputer abgebrochen
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python365\lib\wsgiref\handlers.py", line 141, in run
+    self.handle_error()
+  File "C:\Python365\lib\site-packages\django\core\servers\basehttp.py", line 95
+, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Python365\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "C:\Python365\lib\wsgiref\handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python365\lib\socketserver.py", line 639, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Python365\lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Python365\lib\site-packages\django\core\servers\basehttp.py", line 10
+2, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "C:\Python365\lib\socketserver.py", line 696, in __init__
+    self.handle()
+  File "C:\Python365\lib\site-packages\django\core\servers\basehttp.py", line 18
+2, in handle
+    handler.run(self.server.get_app())
+  File "C:\Python365\lib\wsgiref\handlers.py", line 144, in run
+    self.close()
+  File "C:\Python365\lib\wsgiref\simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[23/Apr/2018 21:01:08] "GET /static/bp_cupid/fonts/fontawesome-webfont.woff2?v=4
+.3.0 HTTP/1.1" 200 56780
+BPVerwaltungszeitraum [post_save]: aktualisiere die Kapazitäten der BP-Blöcke vo
+n Test-Zeitraum
+[23/Apr/2018 21:02:59] "POST /installation/ HTTP/1.1" 302 0
+[23/Apr/2018 21:03:03] "GET / HTTP/1.1" 200 23874
+[23/Apr/2018 21:03:03] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[23/Apr/2018 21:03:03] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304
+0
+[23/Apr/2018 21:03:03] "GET /static/debug_toolbar/js/jquery_pre.js HTTP/1.1" 304
+ 0
+[23/Apr/2018 21:03:03] "GET /static/debug_toolbar/js/jquery_post.js HTTP/1.1" 30
+4 0
+[23/Apr/2018 21:03:03] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[23/Apr/2018 21:03:03] "GET /static/debug_toolbar/img/ajax-loader.gif HTTP/1.1"
+304 0
+[23/Apr/2018 21:03:15] "GET /logout/?next=/ HTTP/1.1" 302 0
+[23/Apr/2018 21:03:15] "GET / HTTP/1.1" 302 0
+[23/Apr/2018 21:03:16] "GET /login/?next=/ HTTP/1.1" 200 12791
+[23/Apr/2018 21:03:16] "GET /static/bp_cupid/css/login.css HTTP/1.1" 200 699
+Traceback (most recent call last):
+  File "C:\Python365\lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Python365\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+  File "C:\Python365\lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "C:\Python365\lib\socketserver.py", line 775, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] Eine bestehende Verbindung wurde softwa
+regesteuert
+durch den Hostcomputer abgebrochen
+[23/Apr/2018 21:03:16] "GET /static/bp_cupid/css/login.css HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 49677)
+Traceback (most recent call last):
+  File "C:\Python365\lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Python365\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+  File "C:\Python365\lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "C:\Python365\lib\socketserver.py", line 775, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] Eine bestehende Verbindung wurde softwa
+regesteuert
+durch den Hostcomputer abgebrochen
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python365\lib\wsgiref\handlers.py", line 141, in run
+    self.handle_error()
+  File "C:\Python365\lib\site-packages\django\core\servers\basehttp.py", line 95
+, in handle_error
+    super(ServerHandler, self).handle_error()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Python365\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Python365\lib\wsgiref\handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "C:\Python365\lib\wsgiref\handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python365\lib\socketserver.py", line 639, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Python365\lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Python365\lib\site-packages\django\core\servers\basehttp.py", line 10
+2, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "C:\Python365\lib\socketserver.py", line 696, in __init__
+    self.handle()
+  File "C:\Python365\lib\site-packages\django\core\servers\basehttp.py", line 18
+2, in handle
+    handler.run(self.server.get_app())
+  File "C:\Python365\lib\wsgiref\handlers.py", line 144, in run
+    self.close()
+  File "C:\Python365\lib\wsgiref\simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+
+Gute Nacht und Danke
+Papa
